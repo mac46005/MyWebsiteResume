@@ -1,104 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
-        body{
+        body {
             margin: 0;
             color: #fff;
             font-size: 16px;
             background: #606060;
         }
 
-        main{
-            padding-top: 1em;
+        main {
             height: 95vh;
             border: 30px solid blue;
         }
-        section{
+
+        section {
             height: 100%;
+            padding-top: 50px;
         }
+
         /* Nav Layout */
-        header{
+        header {
             background: rgb(24, 24, 24);
             position: fixed;
             width: 100%;
         }
-        header h1{
+
+        header h1 {
             margin: auto 0;
         }
-        header ul{
+
+        header ul {
             list-style: none;
         }
-        header ul li{
+
+        header ul li {
             display: inline;
             margin-left: 1.2em;
         }
 
-        header ul a{
+        header ul a {
             text-decoration: none;
             font-size: 1.2rem;
             color: #fff;
         }
-        header ul li a:hover{
+
+        header ul li a:hover {
             text-decoration: underline;
         }
+
         /* END Nav Layout */
 
 
 
 
         /* START Layout */
-        .container{
+        .container {
             width: 90%;
             min-width: 450px;
             margin: 0 auto;
             border: 1px solid red;
         }
-        .columns{
+
+        .columns {
             display: flex;
             flex-direction: column;
             border: 1px solid rgb(0, 255, 0);
         }
-        .rows{
+
+        .rows {
             display: flex;
             flex-direction: row;
             border: 1px solid rgb(223, 0, 223)
         }
-        .just-center{
+
+        .just-center {
             justify-content: center;
         }
-        .just-spBet{
+
+        .just-spBet {
             justify-content: space-between;
         }
-        .just-spEven{
+
+        .just-spEven {
             justify-content: space-evenly;
         }
-        .just-spArnd{
+
+        .just-spArnd {
             justify-content: space-around;
         }
-        .fullVh{
+
+        .fullVh {
             height: 100%;
         }
 
-        .col-1{
+        .col-1 {
             flex-basis: 23%;
         }
-        .col-2{
+
+        .col-2 {
             flex-basis: 47%;
         }
-        .col-3{
+
+        .col-3 {
             flex-basis: 72%;
         }
-        .col-4{
+
+        .col-4 {
             flex-basis: 97%;
         }
+
         /* END Layout */
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -147,7 +167,7 @@
                             </ul>
                         </nav>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -155,36 +175,54 @@
 
 
 
+            <!-- 
+                This is the ABOUT ME section
+                This will contain information aout me.
+                 Information such as work or education justory.
+                 Idk what other information.
+             -->
             <section id="aboutme">
                 <h2>About Me</h2>
                 <div class="rows just-spBet">
                     <div class="col-1">
                         <h3>Story</h3>
                         <p>
-                            I am currently studying computer science at University Missouri Saint Louis. My goal is to obtain an entry level job or an internship in which I can grow my career long term.
+                            I am currently studying computer science at University Missouri Saint Louis. My goal is to
+                            obtain an entry level job or an internship in which I can grow my career long term.
                         </p>
                     </div>
                     <div class="columns col-2">
-                        <div>
+                        <div class="aboutMe-sec">
                             <h3>Education</h3>
-                            
-                            <p><strong>Pattonville Highschool</strong></p>
-                            <p>2007-2011</p>
 
-                            <p><strong>Saint Louis Community College</strong></p>
-                            <ul>
-                                <li>2018-2021</li>
-                                <li>GPA 3.56</li>
-                                <li>Courses:
-                                    <br>
-                                    C# I, C# II, C# III, Web Development
-                                </li>
-                            </ul>
+                            <div class="edItem">
+                                <h5>Pattonville Highschool</h5>
+                                <ul>
+                                    <li>2007 - 2011</li>
+                                </ul>
+                            </div>
+
+
+
+                            <div class="edItem">
+                                <h5>Saint Louis Community College</h5>
+                                <ul>
+                                    <li>2018-2021</li>
+                                    <li>GPA 3.56</li>
+                                    <li>Courses:
+                                        <br>
+                                        C# I, C# II, C# III, Web Development
+                                    </li>
+                                </ul>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
 
-            </section><!--* END About Me -->
+            </section>
+            <!--* END About Me -->
 
 
 
@@ -201,7 +239,8 @@
             <section id="portfolio">
                 <h2>Portfolio</h2>
 
-            </section><!--* END Portfolio-->
+            </section>
+            <!--* END Portfolio-->
 
 
 
@@ -214,9 +253,11 @@
 
             <section id="contactme">
                 <h2>Contact Me</h2>
-            </section><!--* END Contact Me-->
+            </section>
+            <!--* END Contact Me-->
 
         </div>
     </main>
 </body>
+
 </html>
