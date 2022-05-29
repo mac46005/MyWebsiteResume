@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            margin: 0;
+            color: #fff;
+            font-size: 16px;
+            background: #606060;
+        }
+
+        main{
+            padding-top: 1em;
+            height: 95vh;
+            border: 30px solid blue;
+        }
+        section{
+            height: 100%;
+        }
+        /* Nav Layout */
+        header{
+            background: rgb(24, 24, 24);
+            position: fixed;
+            width: 100%;
+        }
+        header h1{
+            margin: auto 0;
+        }
+        header ul{
+            list-style: none;
+        }
+        header ul li{
+            display: inline;
+            margin-left: 1.2em;
+        }
+
+        header ul a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+        header ul li a:hover{
+            text-decoration: underline;
+        }
+        /* END Nav Layout */
+
+
+
+
+        /* START Layout */
+        .container{
+            width: 90%;
+            min-width: 450px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        .columns{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(0, 255, 0);
+        }
+        .rows{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid rgb(223, 0, 223)
+        }
+        .just-center{
+            justify-content: center;
+        }
+        .just-spBet{
+            justify-content: space-between;
+        }
+        .just-spEven{
+            justify-content: space-evenly;
+        }
+        .just-spArnd{
+            justify-content: space-around;
+        }
+        
+        /* END Layout */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="rows just-spBet">
+                <h1>Portfolio</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#aboutme">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog    contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <div class="container">
+
+
+
+
+            <section id="home" class="columns just-spEven">
+                <div class="rows col">
+                    <div>
+                        <h2>
+                            Marco Preciado
+                        </h2>
+                        <p>
+                            programmer/webdesigner
+                        </p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, harum.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>social</h2>
+                        <nav>
+                            <ul>
+                                <li><a href="#">fb</a></li>
+                                <li><a href="#">insta</a></li>
+                                <li><a href="#">github</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+            </section>
+
+
+
+
+
+            <section id="aboutme">
+                <h1>About me</h1>
+                <div class="rows">
+                    <div>
+                        <h3>Story</h3>
+                        <p>
+                            I am currently studying computer science at University Missouri Saint Louis. My goal is to obtain an entry level job or an internship in which I can grow my career long term.
+                        </p>
+                    </div>
+                    <div class="columns">
+                        <div>
+                            <h3>Education</h3>
+
+                        </div>
+                        <div>
+                            <h3>Work History</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+</body>
+</html>
