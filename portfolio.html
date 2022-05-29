@@ -80,7 +80,22 @@
         .just-spArnd{
             justify-content: space-around;
         }
-        
+        .fullVh{
+            height: 100%;
+        }
+
+        .col-1{
+            flex-basis: 23%;
+        }
+        .col-2{
+            flex-basis: 47%;
+        }
+        .col-3{
+            flex-basis: 72%;
+        }
+        .col-4{
+            flex-basis: 97%;
+        }
         /* END Layout */
     </style>
 </head>
@@ -105,7 +120,7 @@
 
 
     <main>
-        <div class="container">
+        <div class="container fullVh">
 
 
 
@@ -145,14 +160,14 @@
 
             <section id="aboutme">
                 <h1>About me</h1>
-                <div class="rows">
-                    <div>
+                <div class="rows just-spBet">
+                    <div class="col-1">
                         <h3>Story</h3>
                         <p>
                             I am currently studying computer science at University Missouri Saint Louis. My goal is to obtain an entry level job or an internship in which I can grow my career long term.
                         </p>
                     </div>
-                    <div class="columns">
+                    <div class="columns col-3">
                         <div>
                             <h3>Education</h3>
 
