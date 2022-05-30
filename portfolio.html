@@ -7,22 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
+
+
         body {
             margin: 0;
             color: #fff;
             font-size: 16px;
-            background: #606060;
+            background: linear-gradient(35deg, black, red)
         }
 
-        main {
-            height: 95vh;
-            border: 30px solid blue;
-        }
 
-        section {
-            height: 100%;
-            padding-top: 50px;
-        }
+
+
+
 
         /* Nav Layout */
         header.mainHeader {
@@ -53,8 +50,15 @@
         header.mainHeader ul li a:hover {
             text-decoration: underline;
         }
-
         /* END Nav Layout */
+
+
+
+
+
+
+
+
 
 
 
@@ -64,19 +68,19 @@
             width: 90%;
             min-width: 450px;
             margin: 0 auto;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
 
         .columns {
             display: flex;
             flex-direction: column;
-            border: 1px solid rgb(0, 255, 0);
+            /* border: 1px solid rgb(0, 255, 0); */
         }
 
         .rows {
             display: flex;
             flex-direction: row;
-            border: 1px solid rgb(223, 0, 223)
+            /* border: 1px solid rgb(223, 0, 223) */
         }
 
         .just-center {
@@ -98,7 +102,6 @@
         .fullVh {
             height: 100%;
         }
-
         .col-1 {
             flex-basis: 23%;
         }
@@ -115,7 +118,95 @@
             flex-basis: 97%;
         }
 
+        main {
+            height: 100vh;
+        }
+
+        section {
+            height: 100%;
+        }
         /* END Layout */
+
+
+
+
+
+
+
+
+        /* HOME */
+        #name{
+            background-color: transparent;
+            margin: 0;
+
+        }
+
+        .nameTitle {
+            margin-left: 7em;
+            animation: title 5s 0s 1 normal none;
+        }
+
+
+        @keyframes title{
+            0%{
+                color: rgba(0,0,0,0);
+            }
+        }
+
+
+        #home{
+            background:  black;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+        }
+
+        #home h2{
+            background-color: transparent;
+            font-size: 2rem;
+            margin: 0;
+        }
+        #home p{
+            margin: 0;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* END HOME */
+
+
+
+
+
+
+
+
+
+
+
+
+        h2{
+            background:rgb(154, 55, 225);
+            padding: .5em 0;
+            margin: 0;
+            padding-left: 1rem;
+            border-radius: .2em;
+            margin-bottom: 1em;
+        }
+        
+
+
+
+
+
     </style>
 </head>
 
@@ -146,7 +237,7 @@
 
 
             <section id="home" class="columns just-spEven">
-                <div class="rows col">
+                <div class="rows col nameTitle">
                     <div>
                         <h2>
                             Marco Preciado
@@ -203,6 +294,14 @@
                                 </ul>
                             </div>
 
+                            <div class="edItem">
+                                <h5>University Missouri Saint Louis</h5>
+                                <ul>
+                                    <li>2021 - ongoing</li>
+                                    <li>GPA: 3.51</li>
+                                </ul>
+                            </div>
+
 
                         </div>
                     </div>
@@ -240,6 +339,21 @@
 
             <section id="contactme">
                 <h2>Contact Me</h2>
+                <div class="rows just-spEven">
+                    <form action="#">
+                        <label for="email">Email: <input type="email" name="" id=""></label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <p><input type="submit" value="send"></p>
+                    </form>
+                    <div>
+                        <address>
+                            <h4>Contact Information</h4>
+                            <p>Marco Preciado</p>
+                            <p>Phone Number: (314)-912-6131</p>
+                            <p>Github: <a href="https://github.com/mac46005" target="_blank">mac46005</a></p>
+                        </address>
+                    </div>
+                </div>
             </section>
             <!--* END Contact Me-->
 
